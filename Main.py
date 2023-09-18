@@ -50,6 +50,8 @@ def add_data():
         except:
             st.warning("Unable to write, Please close your dataset !!") 
             return False
+    with st.expander(" My Excel Data"):
+     st.dataframe(df.tail())
     
 add_data()
 
